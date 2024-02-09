@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminHolidayRequestReview"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/accent"
+        android:text="Review Holiday Request"
+        android:layout_marginBottom="16dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    <Button
+        android:layout_marginTop="16dp"
+
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="BACK"
+        style="@style/PrimaryButton"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Swap Right To Accept and Left to Reject"
+    style="@style/LoginLinkText"
+    android:layout_marginBottom="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recyclerAdminPendingHolidayRequestView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary"
+        />
+
+
+</LinearLayout>

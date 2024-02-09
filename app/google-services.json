@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "650056867052",
+    "project_id": "holidayhub-21581157",
+    "storage_bucket": "holidayhub-21581157.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650056867052:android:da741d3d646b659cd9d9c9",
+        "android_client_info": {
+          "package_name": "com.example.holidayhub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE0Lzhap8tt2AXALNCT4VEfmHNObKbcrs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

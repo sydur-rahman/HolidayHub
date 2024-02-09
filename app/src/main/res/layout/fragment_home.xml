@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:background="@color/primary"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <!-- User Profile Section -->
+    <LinearLayout
+        android:id="@+id/userProfileLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:layout_gravity="top">
+
+        <!-- Profile Photo -->
+        <ImageView
+            android:id="@+id/profilePhoto"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/profile_photo"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="16dp"
+            />
+
+        <!-- User Welcome Text -->
+        <TextView
+            android:id="@+id/txtWelcome_UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Greetings, User Name Here"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <!-- Card View Section -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/holidayCardView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="6dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:layout_gravity="center"
+
+        >
+
+        <!-- Inner Layout for Rounded Text Views -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:orientation="horizontal">
+
+            <!-- Approved Holidays -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/labelApprove"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Approved"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/txtApproveHolidays"
+                    style="@style/StatusButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <!-- Remaining Holidays -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/labelPending"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pending"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/txtPendingHolidays"
+                    style="@style/StatusButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <!-- Pending Holidays -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/labelRejected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rejected"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/txtRejectedHolidays"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/black"
+                    style="@style/StatusButton3"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtHolidayMassage"
+        style="@style/PrimaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Holiday Requests"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleUserUserHolidayRequestView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/primary"
+         />
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+</LinearLayout>

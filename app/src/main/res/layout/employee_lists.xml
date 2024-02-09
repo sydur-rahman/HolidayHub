@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:gravity="center">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="14dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Photo ImageView -->
+            <ImageView
+                android:id="@+id/imgEmployeePhoto"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/profile_photo"
+                android:layout_marginStart="4dp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <!-- TextView for First Name -->
+                <TextView
+                    android:id="@+id/firstNameTextViewEmployee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="First Name:"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="@color/black"/>
+
+                <!-- TextView for Last Name -->
+                <TextView
+                    android:id="@+id/lastNameTextViewEmployee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name:"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="@color/black"/>
+
+                <!-- TextView for Role -->
+                <TextView
+                    android:id="@+id/roleTextViewEmployee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Role:"
+                    android:layout_marginBottom="4dp"
+                    android:ellipsize="end"
+                    android:textColor="@color/black"/>
+
+                <!-- TextView for Mobile -->
+                <TextView
+                    android:id="@+id/mobileTextViewEmployee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile:"
+                    android:ellipsize="end"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="@color/black"/>
+
+                <!-- TextView for Email -->
+                <TextView
+                    android:id="@+id/emailTextViewEmployee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

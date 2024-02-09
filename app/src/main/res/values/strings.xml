@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HolidayHub</string>
+    <string-array name="Position">
+        <item>Employee</item>
+        <item>Operation Manager</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
