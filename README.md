@@ -55,13 +55,13 @@ While the current version of HolidayHub covers essential functionalities, there 
   - Integrate analytics to provide insights into holiday trends and usage.
 
 - **Setting Employees' Number of Holidays:**
-  -Implement the functionality for Operation Managers to set the number of holidays for each employee, and allow managers to update the number of holidays for individual employees.
+  - Implement the functionality for Operation Managers to set the number of holidays for each employee, and allow managers to update the number of holidays for individual employees.
   
-- **Improvement on Admin Dashboard **
+- **Improvement on Admin Dashboard:**
   - Implement the functionality to allow the admin to see the total number of pending holiday requests for approval or rejection.
   
-- **Role Verification **
-  - Enhance the role verification system to ensure that users have to validated for their role .
+- **Role Verification:**
+  - Enhance the role verification system to ensure that users have to be validated for their role.
 
 You are welcomes to contribute ! There are numerous opportunities to add new features or improve existing ones. If you have any suggestions or would like to contribute, please follow the [contribution guidelines](CONTRIBUTING.md).
 
