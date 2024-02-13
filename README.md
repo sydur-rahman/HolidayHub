@@ -4,6 +4,9 @@
 
 Welcome to HolidayHub, an Android application designed to simplify and enhance the management of employee holidays within a company. This project serves as a comprehensive solution for streamlining holiday requests, providing transparency, and fostering efficient communication between employees and managers.
 
+Feel free to watch the [demo video](https://youtu.be/sBqZgTOfT2w) for a quick overview of the app's functionality.
+
+
 ## Key Features
 
 - **User Authentication:**
