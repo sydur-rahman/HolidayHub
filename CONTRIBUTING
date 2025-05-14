@@ -1,0 +1,29 @@
+# Contribution Guidelines
+
+Thank you for considering contributing to HolidayHub! We welcome contributions from the community to enhance the project. Please follow these guidelines:
+
+## Reporting Issues
+
+If you encounter any issues or have suggestions, please open an [issue](../../issues). Provide detailed information, including steps to reproduce the problem.
+
+## Making Contributions
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix: `git checkout -b feature/your-feature` or `git checkout -b bugfix/your-bug-fix`.
+3. Commit your changes: `git commit -m "Add your feature"`.
+4. Push to the branch: `git push origin feature/your-feature`.
+5. Open a Pull Request (PR) against the `main` branch.
+
+## Code Style
+
+Follow the existing code style and conventions. Make sure your code is readable and well-documented.
+
+## Feature Requests
+
+If you have ideas for new features, feel free to open an issue to discuss them.
+
+## Contact
+
+For questions or discussions, you can reach out through [LinkedIn](https://www.linkedin.com/in/sydur-rahman).
+
+Thank you for contributing to HolidayHub!
