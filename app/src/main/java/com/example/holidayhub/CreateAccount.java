@@ -29,9 +29,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CreateAccount extends AppCompatActivity {
-Button btnCreateAccount;
+Button btnCreateAccount,btnAlreadyHaveAnAcc;
 EditText editTextFirstName, editTextLastName, editTextMobile,editTextEmail,editTextPassword,editTextConfirmPassword;
-TextView txtHaveAccount;
 Spinner spinnerRole;
 
 //fireBase
@@ -53,7 +52,7 @@ String userPosition; //
         editTextEmail =findViewById(R.id.editTextEmail);
         editTextPassword=findViewById(R.id.editTextPassword);
         editTextConfirmPassword=findViewById(R.id.editTextConfirmPassword);
-        txtHaveAccount=findViewById(R.id.txtHaveAccount);
+        btnAlreadyHaveAnAcc=findViewById(R.id.btnHaveAnAcc);
         spinnerRole =findViewById(R.id.spinnerRole);
 
         userAuth= FirebaseAuth.getInstance();
@@ -162,7 +161,6 @@ btnCreateAccount.setOnClickListener(new View.OnClickListener() {
 
                          }
                      });
-
                      Toast.makeText(CreateAccount.this, "User Created Successfully", Toast.LENGTH_SHORT).show();
                      startActivity(toWelcomeScreen);
                  }else  {
@@ -171,6 +169,12 @@ btnCreateAccount.setOnClickListener(new View.OnClickListener() {
              }
          });
 
+    }
+});
+btnAlreadyHaveAnAcc.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        onBackPressed();
     }
 });
 
@@ -191,5 +195,7 @@ btnCreateAccount.setOnClickListener(new View.OnClickListener() {
                     }
                 });
     }
+
+
 
 }

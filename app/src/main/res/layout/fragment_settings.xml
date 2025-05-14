@@ -14,7 +14,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Settings"
+        android:text="Profile"
         android:textSize="25sp"
         style="@style/SecondaryButton"
         android:layout_marginBottom="32dp"/>
@@ -46,7 +46,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
-        android:text="Mobile: "/>
+        android:text="Mobile: "
+        />
     <TextView
         android:id="@+id/userEmail"
         android:layout_marginTop="16dp"
@@ -67,7 +68,6 @@
 
     <Button
         android:text="change Password"
-        style="@style/SecondaryButton"
         android:layout_marginTop="16dp"
         android:id="@+id/btnChangePassword"
         android:layout_width="match_parent"

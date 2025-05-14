@@ -1,7 +1,11 @@
 <resources>
-    <string name="app_name">HolidayHub</string>
+    <string name="app_name">Holiday Hub</string>
     <string-array name="Position">
-        <item>Employee</item>
+        <item>Front Office</item>
+        <item>Food and Beverage Assistant</item>
+        <item>Housekeeping</item>
+        <item>Maintenance</item>
+        <item>Reservation Team</item>
         <item>Operation Manager</item>
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->

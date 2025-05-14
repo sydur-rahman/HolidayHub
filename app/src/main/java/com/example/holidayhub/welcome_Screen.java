@@ -62,8 +62,27 @@ String userId,userRole;
                 if (fUserAuth.getCurrentUser() != null) {
                     // Log out the current user
                     fUserAuth.signOut();
+
                 }
-                startActivity(toCreateAccount);
+
+              AlertDialog.Builder termsConditionAlert= new AlertDialog.Builder(welcome_Screen.this);
+                termsConditionAlert.setTitle("Terms & Conditions");
+                termsConditionAlert.setMessage("By creating an account Your Personal Data will be collected and stored according to the Company's data policy.(For more information contact HR department)");
+                termsConditionAlert.setIcon(R.drawable.terms_condition_icon);
+                termsConditionAlert.setPositiveButton("Accept", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        startActivity(toCreateAccount);
+                    }
+                });
+                termsConditionAlert.setNegativeButton("Delcine", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+
+                termsConditionAlert.show();
 
             }
         });
@@ -90,7 +109,7 @@ String userId,userRole;
                         fUserAuth.sendPasswordResetEmail(email).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void unused) {
-                                Toast.makeText(welcome_Screen.this, "Reset link ent to your Email", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(welcome_Screen.this, "Password Reset link sent to your Email", Toast.LENGTH_SHORT).show();
                             }
                         }).addOnFailureListener(new OnFailureListener() {
                             @Override
@@ -158,15 +177,11 @@ String userId,userRole;
                                        toAdminDashboard.putExtra("userId",userId);
                                        startActivity(toAdminDashboard);
                                        finish();
-                                   }else if (userRole.equals("Employee")){
+                                   }else {
                                         //pass firebase user id
 
                                        toMain.putExtra("userId",userId) ;
                                        //pass user to the Main Activity/ HomeFragment
-                                       startActivity(toMain);
-                                       finish();
-                                   }
-                                   else {
                                        startActivity(toMain);
                                        finish();
                                    }
@@ -178,7 +193,7 @@ String userId,userRole;
                        });
 
                     }else {
-                        Toast.makeText(welcome_Screen.this, "Error !! "+ task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                        Toast.makeText(welcome_Screen.this, "Error !! Username or Password is Not Correct", Toast.LENGTH_LONG).show();
                     }
                 }
             });

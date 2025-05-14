@@ -11,14 +11,12 @@
 
     >
 
-    <!-- TODO: Update blank fragment layout -->
-
 
         <TextView
             android:layout_marginTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Request Your Next Holiday !"
+            android:text="Request Your Holiday !"
             android:textColor="@color/black"
             android:textAlignment="center"
             android:textStyle="bold"
@@ -62,6 +60,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Holiday End Date"
+                android:layout_marginLeft="8dp"
                 android:textSize="16sp"
                 />
         </LinearLayout>
@@ -85,6 +84,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Reason for Holiday: "
+        android:textStyle="bold"
 
         />
 
@@ -94,7 +94,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:inputType="textMultiLine"
-        android:gravity="top|start"
+        android:gravity="top|left"
         android:textCursorDrawable="@color/black"
         android:hint="Type here..."
         android:background="@color/secondary"
@@ -104,7 +104,8 @@
         android:layout_marginTop="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select Type Of Holiday"/>
+        android:text="Select Type Of Holiday"
+        android:textStyle="bold"/>
 
         <Spinner
             android:id="@+id/spinnerTypeOfHoliday"
@@ -115,19 +116,56 @@
 
             />
 
+
+
     </LinearLayout>
 
 
 </androidx.cardview.widget.CardView>
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:elevation="8dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/secondary"
+
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IMPORTANT:"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:text="Annual holidays may only be taken after approval by a Manager.Do not make any holiday arrangements, including booking flights, without obtaining appropriate written approval first. Applications will be reviewed and approved on a first come first served basis in accordance with the Company’s needs.
+Unpaid leave is not normally permitted and will only be granted in exceptional circumstances, if approved in advance and confirmed in writing by a Company Director."
+                android:textSize="26px"
+
+                />
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
     <LinearLayout
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="16dp"
         android:layout_marginBottom="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-
+        android:orientation="vertical">
 
     <Button
 
@@ -136,7 +174,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:id="@+id/btnSendRequest"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Send Request"
         style="@style/PrimaryButton"

@@ -12,9 +12,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Admin Dashboard"
+        android:text="HR Portal"
         android:textAlignment="center"
         android:textSize="19sp"
+        style="@style/SecondaryButton"
 
         />
     <LinearLayout
@@ -24,14 +25,6 @@
         android:padding="8dp"
         android:orientation="horizontal">
 
-        <!-- Profile Photo -->
-        <ImageView
-            android:id="@+id/adminProfilePhoto"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/settings_gear_svgrepo_com"
-            android:scaleType="centerCrop"
-            android:layout_marginEnd="16dp" />
 
         <!-- User Welcome Text -->
         <TextView
@@ -49,15 +42,15 @@
         android:id="@+id/btnReviewPendingHolidays"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Review Pending Holidays"
+        android:text="Review Pending Holidays Requests"
         android:layout_marginBottom="16dp"
-        style="@style/SecondaryButton"
+        style="@style/PrimaryButton"
 
     />
 
     <TextView
         android:textStyle="italic"
-        android:text="List of Employee: "
+        android:text="List of Employees: "
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"/>
